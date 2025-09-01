@@ -6,6 +6,7 @@ import Signup from "./Signup";
 import Login from "./Login";
 import Addproduct from "./Addproduct";
 import Update from "./Update";
+import Product from "./Product";
 import "./App.css";
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
         <BrowserRouter>
           <Nav></Nav>
           <Routes>
-            <Route path="/" element={<h1 style={{marginTop:"7%"}}>Product List</h1>}></Route>
+            <Route path="/" element={<Product/>}></Route>
             <Route path="/add" element={<Addproduct/>}></Route>
             <Route path="/update" element={<Update/>}></Route>
             <Route path="/login" element={<Login />}></Route>
@@ -26,5 +27,4 @@ const App = () => {
     </>
   );
 };
-
 export default App;
